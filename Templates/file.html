@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>`title`</title>
+        
+		<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-`bversion`.min.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-`bversion`.min.css" type="text/css" />
+        
+		<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-`bversion`.min.js"></script>
+		<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-`bversion`.min.js"></script>
+		<script type="text/javascript">
+    		Bokeh.set_log_level("info");
+		</script>
+    <script>
+    function changeScreenSize(w,h)
+    {
+    window.resizeTo( w,h )
+    }
+    </script>		
+<!--
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+-->
+    </head>
+    <body onload="changeScreenSize(550,550);">
+        `plotbody`
+    </body>
+</html>
